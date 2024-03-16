@@ -1,3 +1,6 @@
+
+import React from "react";
+import ReactDOM from "react-dom/client";
 /** 
 
 <div id="parent">
@@ -28,12 +31,12 @@ const parent = React.createElement(
 
   //simple way of doing the above code
   const heading1 = React.createElement("h1",{id:"h1"},"i am heading one");
-  const heading2 = React.createElement("h2",{id:"h2"}, "i am sibling");
+  const heading2 = React.createElement("h2",{id:"h2"}, "i am react");
   const container = React.createElement("div", {id:"div"}, [heading1, heading2]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(container); //everything there will be rendered inside this root
 //react works in a place where we want head, body, footer
-const root1 = ReactDOM.createRoot(document.getElementById("header"));  //now react will work only in header part
+//const root1 = ReactDOM.createRoot(document.getElementById("header"));  //now react will work only in header part
 
 /*
 const root1 = ReactDOM.createRoot(document.getElementById("root"));
